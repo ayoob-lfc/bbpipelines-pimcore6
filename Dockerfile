@@ -6,7 +6,7 @@ RUN apt-get update && \
  DEBIAN_FRONTEND=noninteractive apt-get -y upgrade && \
  DEBIAN_FRONTEND=noninteractive apt-get -y install wget sudo pwgen apt-utils
 
-RUN sudo apt-get install openssh-client
+RUN sudo apt-get install openssh-client -y
 RUN apt-get install gnupg2 -y
 RUN apt-get install apt-transport-https -y
 RUN sudo apt install ca-certificates apt-transport-https
